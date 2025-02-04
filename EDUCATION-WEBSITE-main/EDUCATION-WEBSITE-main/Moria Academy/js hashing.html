@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>js oop</title>
+
+</head>
+
+<body>
+
+<script>
+//console.log(window);
+//alert(1);
+//console.log(navigator.appVersion);
+
+
+//this is an object Literal
+const book1 = {
+//this are properties with key values
+   title:  'Book one',
+   author: 'john Doe',
+   year:  '2013',
+// this is a function
+   getSummary:function() {
+   return `${this.title} was written by ${this.author} in ${this.year}`;
+}
+
+};
+
+
+const book2 = {
+//this are properties with key and values
+   title:  'Book two',
+   author: 'john Doe',
+   year:  '2016',
+// this is a function
+   getSummary:function() {
+   return `${this.title} was written by ${this.author} in ${this.year}`;
+}
+
+};
+
+//console.log(book1);
+//console.log(book1.title)
+
+//console.log(book1.getSummary());
+//console.log(book2.getSummary());
+//console.log(Object.values(book2));
+console.log(Object.keys(book2));
+
+</script>
+
+</body>
+</html>

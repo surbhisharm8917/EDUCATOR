@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>constructor</title>
+
+</head>
+
+<body>
+
+<script>
+
+//constructor
+
+function Book(title, author, year){
+//console.log('Book Initialized...');
+   this.title = title;
+   this.author = author;
+   this.year = year;
+
+   this.getSummary = function() {
+   return `${this.title} was writen by ${this.author} in ${this.year}`;
+};
+}
+//initialized an object
+const book1 = new Book('Book one', 'john doe', '2013');
+const book2 = new Book('Book two', 'john doe', '2016');
+
+//console.log(book1);
+console.log(book2.getSummary());
+
+</script>
+
+</body>
+</html>

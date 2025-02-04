@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>prototype</title>
+
+</head>
+
+<body>
+<script>
+
+     
+//prototype
+
+function Book(title, author, year){
+//console.log('Book Initialized...');
+   this.title = title;
+   this.author = author;
+   this.year = year;
+}
+
+Book.prototype.getSummary = function(){
+   this.getSummary = function() {
+   return `${this.title} was writen by ${this.author} in ${this.year}`;
+};
+}
+
+//initialized an object
+const book1 = new Book('Book one', 'john doe', '2013');
+const book2 = new Book('Book two', 'john doe', '2016');
+   console.log(book2.getSummary());
+
+//console.log(book1);
+
+</script>
+
+</body>
+</html>
